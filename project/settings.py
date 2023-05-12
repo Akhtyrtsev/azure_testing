@@ -125,6 +125,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 CELERY_BROKER_URL = 'redis://:zNgOc14cdOVIrIwCj9T1NJMjyNpjWkjPmAzCaMkIWGg=@redis-testin-kekw.redis.cache.windows.net:6379/0'
+CELERY_RESULT_BACKEND = 'redis://:zNgOc14cdOVIrIwCj9T1NJMjyNpjWkjPmAzCaMkIWGg=@redis-testin-kekw.redis.cache.windows.net:6379/0'
 import os
 if 'WEBSITE_HOSTNAME' in os.environ: # Running on Azure
     from .azure import *
